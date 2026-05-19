@@ -1,73 +1,243 @@
-# React + TypeScript + Vite
+# pace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Minimal modern PWA for creating beautiful workout cards for social media.
 
-Currently, two official plugins are available:
+Inspired by Apple Fitness, modern creator tools, and clean mobile-first UI/UX.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Create workout cards in seconds
+* Apple Fitness inspired UI
+* Multiple unique template styles
+* Running / Cycling / Walking support
+* Live card preview
+* PNG/JPG export
+* Story / Square / Portrait formats
+* Mobile-first experience
+* PWA support
+* Local card history
+* Fast frontend-only architecture
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 🎯 Product Vision
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+pace is not a workout tracker or analytics dashboard.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The application focuses on:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* aesthetics
+* simplicity
+* customization
+* social sharing
+
+The goal is to make workout sharing:
+
+* fast
+* beautiful
+* intuitive
+* accessible without VPN or paid subscriptions
+
+---
+
+# 🧩 Tech Stack
+
+## Frontend
+
+* React
+* Vite
+* TypeScript
+* Tailwind CSS
+
+## Additional Libraries
+
+* React Router
+* Zustand
+* html-to-image
+* lucide-react
+* vite-plugin-pwa
+
+## Deployment
+
+* Vercel
+
+---
+
+# 📱 MVP Features
+
+## Workout Input
+
+Users can manually enter:
+
+* activity type
+* distance
+* duration
+* pace
+* calories
+* date
+* title
+
+---
+
+## Templates
+
+Different visual formats:
+
+* Apple Fitness
+* Minimal
+* Gradient sport
+* Story layouts
+* Image-focused layouts
+* Large-stat layouts
+
+Templates differ by:
+
+* composition
+* typography
+* spacing
+* metric placement
+* visual mood
+
+---
+
+## Export
+
+Supported formats:
+
+* PNG
+* JPG
+
+Supported ratios:
+
+* 9:16 Story
+* 1:1 Square
+* 4:5 Portrait
+
+---
+
+## History
+
+Local card history using:
+
+* localStorage
+
+Users can:
+
+* save cards
+* reopen cards
+* duplicate cards
+* delete cards
+
+---
+
+# 🗂 Project Structure
+
+```txt
+src/
+  app/
+  pages/
+  components/
+  lib/
+  data/
+  types/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 🚀 Development
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Install dependencies
+
+```bash
+npm install
 ```
+
+## Run development server
+
+```bash
+npm run dev
+```
+
+## Build project
+
+```bash
+npm run build
+```
+
+## Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+# 🌍 Deployment
+
+The project is optimized for:
+
+* Vercel
+* PWA installation
+* mobile-first usage
+
+Deployment flow:
+
+```txt
+GitHub → Vercel → Public PWA URL
+```
+
+---
+
+# 🛣 Roadmap
+
+## v1
+
+* Workout card generator
+* Export
+* Templates
+* History
+
+## v1.1
+
+* Image backgrounds
+* More templates
+* Improved editor
+
+## v2
+
+* GPX/TCX import
+* Route rendering
+* Strava integration
+
+## v3
+
+* Cloud sync
+* Accounts
+* Community features
+
+---
+
+# 🎨 Design Philosophy
+
+pace should feel:
+
+```txt
+More like Canva
+Less like Strava
+```
+
+Focus:
+
+* minimalism
+* emotion
+* aesthetics
+* speed
+* premium mobile UX
+
+---
+
+# 📄 License
+
+MIT
